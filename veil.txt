@@ -1,0 +1,14 @@
+# show tools
+# payloads are shown in [program language]/[framework]/[.py]
+list
+
+# use payload
+use [number]
+
+# set parameters
+set [parameter] [value]
+
+# generate backdoor
+generate
+
+# 
