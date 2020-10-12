@@ -1,3 +1,11 @@
+# install
+apt update
+apt install aptitude -y
+dkpg --add-architecture i386
+aptitude install wine32 -y
+aptitude install veil -y
+/usr/share/veil/config/setup.sh --force --silent
+
 # show tools
 # payloads are shown in [program language]/[framework]/[.py]
 list
