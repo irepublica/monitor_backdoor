@@ -1,0 +1,18 @@
+# module for listening
+use exploit/multi/handler
+
+# see module parameters
+show options
+
+# set parameters
+set [parameter] [value]
+
+# set payload
+set PAYLOAD [payload]
+
+# set payload parameters
+...
+
+# exploit
+exploit
+
