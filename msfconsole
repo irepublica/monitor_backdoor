@@ -1,4 +1,7 @@
-# module for listening
+# module infomation
+info [module]
+
+# module apply
 use exploit/multi/handler
 
 # see module parameters
@@ -13,6 +16,18 @@ set PAYLOAD [payload]
 # set payload parameters
 ...
 
+# set global parameters
+setg
+
+# set parameters to null
+unset
+
+# netcat-like quick connection
+connect
+
 # exploit
 exploit
+
+# save session within msf5 directory
+save 
 
