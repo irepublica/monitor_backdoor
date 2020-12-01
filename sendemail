@@ -1,0 +1,1 @@
+sendemail -xu "[user email]" -xp [password hash] -s [smtp.*.com]:[port] -f "[from email]" -t "[to email]" -u "[header]" -m "[message]" -o message-header="[From:first last <from email>]"
