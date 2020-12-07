@@ -1,3 +1,9 @@
+# update dabatase and start
+service postgresql start
+msfdb init
+msfconsole
+msf > db_status
+
 # module infomation
 info [module]
 
