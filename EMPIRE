@@ -1,0 +1,28 @@
+# create listener
+listeners
+uselistener [tab][tab]
+uselistener [listener type]
+help    # show all commands
+info    # show infomation
+set [parameter] [value]
+execute
+
+# list all listener
+back
+list
+
+# generate backdoor
+help    # show all commands
+usestager [tab][tab]
+usestager [backdoor type]
+info    # show infomation
+set [parameter] [value]
+execute 
+
+# bypass antivirus program
+/min    add after start 
+
+# monitor
+agents
+interact [agent name]
+sysinfo     # system information
